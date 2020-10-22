@@ -1,0 +1,51 @@
+$grid-cols-count: 18;
+
+$screen-xs-max: 768px; //ExtraSmall Devices Max Width
+$screen-sm-max: 991px; //Small Devices Max Width
+$screen-md-max: 1200px; //Medium Devices Max
+
+$breakpoints: (sm: $screen-xs-max,
+  md: $screen-sm-max,
+  lg: $screen-md-max);
+
+// main variables
+
+// FONTS
+$mainFont_ExtraLight: "Montserrat_ExtraLight";
+$mainFont_Light: "Montserrat_Light";
+$mainFont_SemiBold: "Montserrat_SemiBold";
+$mainFont_Bold: "Montserrat_Bold";
+$mainFont: "Montserrat_Regular";
+
+// COLORS
+$black: #000;
+$white: #fff;
+$main-background-color: #f5f5f5;
+$main-font-color: #2f3640;
+$theme-color: #3c40c6;
+
+$prgm-languages: (html: #e34f26,
+  css: #2965f1,
+  scss: #cc6699,
+  pugjs: #a86454,
+  javascript: #f0db4f,
+  react: #61dafb,
+  angular: #dd1b16,
+  vuejs: #42b883,
+  jquery: #0769ad,
+  git: #f1502f,
+  github: #211f1f,
+  gulpjs: #db4446,
+  webpack: #1c78c0,
+  parcel: #21374b,
+  wordpress: #21759b,
+  laravel: #fb503b,
+  php: #8993be);
+
+
+$prgm-languages-colors: ();
+
+@each $lang,
+$hex in $prgm-languages {
+  $prgm-languages-colors: append($prgm-languages-colors, $hex, space)
+}

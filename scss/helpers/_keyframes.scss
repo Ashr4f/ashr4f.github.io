@@ -1,0 +1,18 @@
+@include keyframes-prefixer(dynamic-background-color) {
+    @include dynamic-color-keyframes($prgm-languages-colors, background-color);
+}
+
+
+@include keyframes-prefixer(dynamic-font-color) {
+    @include dynamic-color-keyframes($prgm-languages-colors, color);
+}
+
+@include keyframes-prefixer(active-section-background) {
+    0% {
+        @include opacity(1);
+    }
+
+    100% {
+        @include opacity(0);
+    }
+}
